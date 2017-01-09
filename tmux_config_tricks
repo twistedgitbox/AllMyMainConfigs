@@ -1,0 +1,21 @@
+bind-key M-c new-window -n chat -c $HOME \; \
+  send-keys 'centerim5' 'Enter' \; \
+  split-window -v -p 50 -t 1 \; \
+  send-keys 'weechat-curses' 'Enter' \; \
+  select pane -t 2
+
+  #local music and streaming
+  bind-key M-m new-window -n music -c $HOME \; \
+  split-window -v -p 50 -t 1 \; \
+  send-keys 'cmus' 'Enter' \; \
+  split-window -h -p 70 -t \; \
+  send-keys 'clear && figlet Search Music' 'Enter' \; \
+  select-pane -t 2
+
+#download and search torrent
+bind-key M-t new-window -n torrent -c ~/Videos \; \
+  send-keys 'trz' 'Enter' \; \
+  split-window -v -p 50 -t 1\; \
+  send-keys 'transmission-remote-cli' 'Enter' \; \
+  select-pane -t 1
+

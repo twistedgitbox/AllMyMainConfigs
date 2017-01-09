@@ -1,0 +1,14 @@
+TMUX INSTRUCTIONS
+
+CTL - A   [   - COPY MODE
+, - CHANGE NAME
+  #           List all paste buffers.
+             -           Delete the most recently copied buffer of text.
+                        =           Choose which buffer to paste interactively from a list.
+                                   [           Enter copy mode to copy text or view the history.
+                                              ]           Paste the most recently copied buffer of text.
+
+% split
+" split
+
+HOLD CTL A - RESIZE
