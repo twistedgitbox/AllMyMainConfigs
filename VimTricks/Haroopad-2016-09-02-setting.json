@@ -1,0 +1,42 @@
+{
+  "Code": {
+    "theme": "railscasts",
+    "displayLineNumber": false
+  },
+  "Editor": {
+    "theme": "rubyblue",
+    "displayLineNumber": true,
+    "vimKeyBinding": true,
+    "autoPairCharacters": true,
+    "useMarkdownFolding": false,
+    "indentWithTabs": false,
+    "displayActiveLine": true,
+    "fontSize": 22,
+    "userTheme": "default"
+  },
+  "General": {
+    "enableSyncScroll": true,
+    "playKeypressSound": false,
+    "enableAutoComplete": false,
+    "enableLastFileRestore": true,
+    "displayLanguage": "",
+    "dateFormat": "LLL"
+  },
+  "Markdown": {
+    "tables": true,
+    "footnotes": false,
+    "breaks": true,
+    "sanitize": false,
+    "smartLists": true,
+    "smartypants": true,
+    "mathjax": false,
+    "dollarSign": false
+  },
+  "Viewer": {
+    "theme": "haroopad",
+    "clickableLink": false,
+    "fontSize": 22,
+    "userTheme": "default"
+  },
+  "_version": "0.13.1"
+}

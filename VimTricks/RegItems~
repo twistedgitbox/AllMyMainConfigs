@@ -1,0 +1,51 @@
+VIM INSTRUCTIONS
+
+**INSERT COLUMN**
+  Ctl V -
+  Select jk for # of rows
+  Ctl i
+  Type Inserted text
+  Esc
+
+Shift V - SELECT FULL LINE
+jk to select # of lines
+Shift + >
+
+**REPLACE BLANK LINES WITH TEXT**
+Visual Select
+:s/^$/\/\/ (Replace blank lines with //)
+:s/^$/\# (Replace blank lines with #)
+
+:s/\%V\(.*\)\%V/"\1"/
+
+  * : allows you to enter ex commands.
+  * s/old/new/ is the usual substitute command.
+  * \%V is an under-documented atom to mark the beginning of the selected text
+  * \(.*\) selects everything and save it into selection 1.
+  * The second \%V signifies the end of the selected text.
+  * The replacement text is everyting that was selected, which is stored in \1, surrounded by quotes: "\1".
+
+TMUX COPY
+
+
+    Ctrl+b, [ Enter copy(?) mode.
+
+    Move to start/end of text to highlight.
+
+    Ctrlspace
+
+    Start highlighting text (on Arch Linux). When I've compiled tmux from source on OSX and other Linux's, just Space on its own usually works. Selected text changes the colours, so you'll know if the command worked.
+
+    Move to opposite end of text to copy.
+
+    Alt+w Copies selected text into tmux clipboard.
+
+    Move cursor to opposite tmux pane, or completely different tmux window. Put the cursor where you want to paste the text you just copied.
+
+    Ctrl+b, ] Paste copied text from tmux clipboard.
+
+tmux is quite good at mapping commands to custom keyboard shortcuts.
+
+See Ctrl+b,? for the full list of set keyboard shortcuts.
+
+

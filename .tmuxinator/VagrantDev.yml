@@ -1,0 +1,65 @@
+# ~/.tmuxinator/RailsDev.yml
+
+name: VagrantDev
+root: /media/NIXSPACE/
+
+# Optional tmux socket
+# socket_name: foo
+
+# Runs before everything. Use it to start daemons etc.
+# pre: sudo /etc/rc.d/mysqld start
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+# startup_window: logs
+
+# Controls whether the tmux session should be attached to automatically. Defaults to true.
+# attach: false
+
+# Runs after everything. Use it to attach to tmux with custom options etc.
+# post: tmux -CC attach -t RailsDev
+#
+windows:
+  - NVIM:
+      layout: 676c,149x33,0,0[149x21,0,0{74x21,0,0,0,74x21,75,0,6},149x12,0,22,7]
+      panes:
+        - nvim
+        - bundle exec rails c
+        - tail -f log/development.log
+  - VAGRANT:
+      layout: main-vertical
+      panes:
+        - nvim
+        - vim
+  - GIT:
+      layout: main-horizontal
+      panes:
+        - git log
+        - guard
+  - RAILS:
+      layout: main-vertical
+      panes:
+        - bundle exec rails db
+        - bundle exec rails s
+  - SUPPORT:
+      layout: main-horizontal
+      panes:
+        - ranger
+        - mpsyt
+
+#windows:
+# - editor:
+#     layout: main-vertical
+#      panes:
+#        - vim
+#        - guard
+#  - server: bundle exec rails s
+#  - logs: tail -f log/development.log

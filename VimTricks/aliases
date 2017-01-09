@@ -1,0 +1,27 @@
+V1 = flac2mp3
+alias flac2mp3='for f in *.flac; do avconv -i "$f" -ab 320k -map_metadata 0 -id3v2_version 3 "${f%.*}.mp3"; rm -rf "$f"; done'
+
+V2 = flac2mp3
+alias flac2mp3='for f in *.flac; do flac -cd "$f" | lame -b 320 - "${f%.*}".mp3; done'
+
+**WARNING**
+
+USING THIS ALIAS WILL ERASE THE FLAC FILES IN THE FOLDER
+
+This means if there is an error, we will still have no files.
+
+So use this process:
+
+1 - Copy flac files to conversion folder
+
+2 - cd into conversion folder
+
+3 - use alias command to set alias
+
+4 - type flac2mp3
+
+5 - remove alias using unalias flac2mp3
+
+
+
+

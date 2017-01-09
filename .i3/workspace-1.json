@@ -1,0 +1,49 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1025,
+       "width": 1916,
+       "x": 2,
+       "y": 162
+    },
+    "name": "Mastering ruby blocks in less than 5 minutes | Mix & Go - Chromium",
+    "percent": 0.5,
+    "swallows": [
+       {
+       // "class": "^chromium\\-browser$",
+       // "instance": "^chromium\\-browser$",
+       // "title": "^Mastering\\ ruby\\ blocks\\ in\\ less\\ than\\ 5\\ minutes\\ \\|\\ Mix\\ \\&\\ Go\\ \\-\\ Chromium$",
+       // "transient_for": "^$",
+       // "window_role": "^browser$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1025,
+       "width": 1916,
+       "x": 2,
+       "y": 193
+    },
+    "name": "tmux Tutorial - Split Terminal Windows Easily - Chromium",
+    "percent": 0.5,
+    "swallows": [
+       {
+       // "class": "^chromium\\-browser$",
+       // "instance": "^chromium\\-browser$",
+       // "title": "^tmux\\ Tutorial\\ \\-\\ Split\\ Terminal\\ Windows\\ Easily\\ \\-\\ Chromium$",
+       // "transient_for": "^$",
+       // "window_role": "^browser$"
+       }
+    ],
+    "type": "con"
+}
+
