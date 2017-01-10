@@ -1,0 +1,246 @@
+priority -50
+
+###########################
+# Sections and Paragraphs #
+###########################
+snippet sec "Section" b
+# ${1:Section Name} #
+$0
+endsnippet
+
+snippet ssec "Sub Section" b
+## ${1:Section Name} ##
+$0
+endsnippet
+
+snippet sssec "SubSub Section" b
+### ${1:Section Name} ###
+$0
+endsnippet
+
+snippet par "Paragraph" b
+#### ${1:Paragraph Name} ####
+$0
+endsnippet
+
+snippet spar "Paragraph" b
+##### ${1:Paragraph Name} #####
+$0
+endsnippet
+
+################
+# Common stuff #
+################
+snippet link "Link to something"
+[${1:${VISUAL:Text}}](${3:http://${2:www.url.com}})$0
+endsnippet
+
+snippet img "Image"
+![${1:pic alt}](${2:path}${3/.+/ "/}${3:opt title}${3/.+/"/})$0
+endsnippet
+
+snippet ilc "Inline Code" i
+\`$1\`$0
+endsnippet
+
+snippet cbl "Codeblock" b
+\`\`\`
+$1
+\`\`\`
+$0
+endsnippet
+
+# my own snippets
+snippet 1T "Biggest Text"
+#<span style="color:green">${1:Section Name}</span>
+$0
+endsnippet
+
+snippet 2T "Bigger Text"
+##<span style="color:cyan">${1:Section Name}</span>
+$0
+endsnippet
+
+snippet 3T "Big Text"
+###<span style="color:darkcyan">${1:Section Name}</span>
+$0
+endsnippet
+
+snippet newruby "New Ruby Code"
+<span style="color:green">NEW FILE</span>
+\`\`\`ruby
+$1
+\`\`\`
+$0
+endsnippet
+
+snippet addruby "Add Ruby Code"
+<span style="color:green">ADD</span>
+\`\`\`ruby
+$1
+\`\`\`
+$0
+endsnippet
+
+snippet delcode "Delete Code"
+<span style="color:red">DELETE</span>
+\`\`\`css
+$1
+\`\`\`
+$0
+endsnippet
+
+snippet shcode "sh code"
+\`\`\`sh
+$1
+\`\`\`
+$0
+endsnippet
+
+snippet rubycode "ruby code"
+\`\`\`ruby
+$1
+\`\`\`
+$0
+endsnippet
+
+snippet adderb "add erb"
+<span style="color:green">ADD</span>
+\`\`\`erb
+$1
+\`\`\`
+$0
+endsnippet
+
+snippet csscode "css code"
+\`\`\`scss
+$1
+\`\`\`
+$0
+endsnippet
+
+snippet jscode "js code"
+\`\`\`js
+$1
+\`\`\`
+$0
+endsnippet
+
+snippet allcode "all code"
+\`\`\`
+$1
+\`\`\`
+$0
+endsnippet
+
+snippet newcss "newcss"
+<span style="color:green">NEW FILE</span>
+\`\`\`scss
+$1
+\`\`\`
+$0
+endsnippet
+
+snippet addcss "add css"
+<span style="color:green">ADD</span>
+\`\`\`scss
+$1
+\`\`\`
+$0
+endsnippet
+
+snippet newerb "new erb"
+<span style="color:green">NEW FILE</span>
+\`\`\`erb
+$1
+\`\`\`
+$0
+endsnippet
+
+snippet newjs "new js"
+<span style="color:green">NEW FILE</span>
+\`\`\`js
+$1
+\`\`\`
+$0
+endsnippet
+
+snippet addjs "add js"
+<span style="color:green">ADD</span>
+\`\`\`js
+$1
+\`\`\`
+$0
+endsnippet
+
+snippet newcode "new code"
+<span style="color:green">NEW FILE</span>
+\`\`\`
+$1
+\`\`\`
+$0
+endsnippet
+
+snippet bashcode "bash code"
+\`\`\`bash
+$1
+\`\`\`
+$0
+endsnippet
+
+snippet bgtxt "background text"
+<span style="background:${1:background-color}">${2:Section Name}</span>
+$0
+endsnippet
+
+snippet bdtxt "bold text"
+** ${1:Section Name} **
+$0
+endsnippet
+
+snippet ittxt "italic text"
+* ${1:Section Name} *
+$0
+endsnippet
+
+snippet step "steptext text"
+###### <span style="background:${1:background-color}; font-weight:bold">${2:Step}</span> ######
+$0
+endsnippet
+
+snippet Step "Steptext text"
+###### <span style="color:${1:color}; font-weight:bold">${2:Step}</span> ######
+$0
+endsnippet
+
+snippet bshcd "bash code"
+\`\`\`bash
+$1
+\`\`\`
+$0
+endsnippet
+
+snippet addcode "Add Code"
+<span style="color:green">ADD</span>
+\`\`\`${1:lang}
+${2:code}
+\`\`\`
+$0
+endsnippet
+
+snippet anewcode "ANY New Code"
+<span style="color:green">NEW FILE</span>
+\`\`\`${1:lang}
+${2:code}
+\`\`\`
+$0
+endsnippet
+
+snippet anycode "ANY Code"
+\`\`\`${1:lang}
+${2:code}
+\`\`\`
+$0
+endsnippet
+
+# vim:ft=snippets:
